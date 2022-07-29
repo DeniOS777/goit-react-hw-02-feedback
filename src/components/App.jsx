@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import Section from './Section';
@@ -38,7 +39,7 @@ class App extends Component {
         </Section>
 
         <Section title="Statistics">
-          {true ? (
+          {good || neutral || bad ? (
             <Statistics
               good={good}
               neutral={neutral}
