@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Section = ({ title }) => {
+const Section = ({ title, children }) => {
   return (
     <section>
       <h1>{title}</h1>
+      {children}
     </section>
   );
 };
