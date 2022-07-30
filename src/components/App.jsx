@@ -33,7 +33,7 @@ class App extends Component {
 
     return (
       <Container>
-        <Section title="Please leave your feedback please:)">
+        <Section title="Please leave feedback 😉">
           <FeedbackOptions
             options={options}
             onLeaveFeedback={this.handleClickButton}
@@ -50,7 +50,7 @@ class App extends Component {
               positivePercentage={positiveFeedbackPercentage}
             />
           ) : (
-            <Notification message="There is no feedback" />
+            <Notification message="There is no feedback 😢" />
           )}
         </Section>
       </Container>
