@@ -1,16 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from './Statistics.styled';
+import { Container, Feedback, Label } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <Container>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total feedbacks: {total}</p>
-      <p>Positive feedbacks: {positivePercentage}%</p>
+      <Feedback>
+        <Label>
+          Good: {good} {good ? '🤩' : ''}
+        </Label>
+        <Label>
+          Neutral: {neutral} {neutral ? '😐' : ''}
+        </Label>
+        <Label>
+          Bad: {bad} {bad ? '😡' : ''}
+        </Label>
+      </Feedback>
+      <Label>Total feedbacks: {total}</Label>
+      <Label>Positive feedbacks: {positivePercentage}%</Label>
     </Container>
   );
 };
