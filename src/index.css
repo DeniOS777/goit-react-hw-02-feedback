@@ -1,5 +1,16 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --whiteColor: #ffffff;
+  --greenColor: #089408;
+  --greenColorHover: #078207;
+  --neutralColor: #969696;
+  --neutralColorHover: #868585;
+  --redColor: #d42e2e;
+  --redColorHover: #c12a2a;
+  --titleColor: #009700;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

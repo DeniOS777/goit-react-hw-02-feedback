@@ -9,8 +9,8 @@ export const Feedback = styled.div`
 `;
 
 export const Label = styled.p`
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+
   &:not(:last-child) {
     margin-bottom: 5px;
   }

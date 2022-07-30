@@ -9,5 +9,5 @@ export const SectionWrap = styled.section`
 export const Title = styled.h1`
   margin-bottom: 10px;
   font-size: 32px;
-  color: #009700;
+  color: var(--titleColor);
 `;
