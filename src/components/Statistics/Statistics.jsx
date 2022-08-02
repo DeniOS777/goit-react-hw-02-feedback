@@ -1,25 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Feedback, Label } from './Statistics.styled';
+import {
+  StatisticsBlock,
+  FeedbackPoints,
+  GoodPoints,
+  NeutralPoints,
+  BadPoints,
+  TotalFeedbacks,
+  PositiveFeedbacksPercentage,
+} from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-    <Container>
-      <Feedback>
-        <Label>
+    <StatisticsBlock>
+      <FeedbackPoints>
+        <GoodPoints>
           Good: {good} {good ? '🤩' : ''}
-        </Label>
-        <Label>
+        </GoodPoints>
+        <NeutralPoints>
           Neutral: {neutral} {neutral ? '😐' : ''}
-        </Label>
-        <Label>
+        </NeutralPoints>
+        <BadPoints>
           Bad: {bad} {bad ? '😡' : ''}
-        </Label>
-      </Feedback>
-      <Label>Total feedbacks: {total}</Label>
-      <Label>Positive feedbacks: {positivePercentage}%</Label>
-    </Container>
+        </BadPoints>
+      </FeedbackPoints>
+
+      <TotalFeedbacks>Total feedbacks: {total}</TotalFeedbacks>
+      <PositiveFeedbacksPercentage>
+        Positive feedbacks: {positivePercentage}%
+      </PositiveFeedbacksPercentage>
+    </StatisticsBlock>
   );
 };
 
