@@ -6,6 +6,7 @@ import Section from './Section';
 import Notification from './Notification';
 
 import { Container } from './App.styled';
+import { GlobalStyle } from './GlobalStyle';
 
 class App extends Component {
   state = {
@@ -53,6 +54,7 @@ class App extends Component {
             <Notification message="There is no feedback 😢" />
           )}
         </Section>
+        <GlobalStyle />
       </Container>
     );
   }

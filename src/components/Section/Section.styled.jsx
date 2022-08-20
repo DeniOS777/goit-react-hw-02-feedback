@@ -9,5 +9,5 @@ export const SectionContainer = styled.section`
 export const SectionTitle = styled.h1`
   margin-bottom: 10px;
   font-size: 32px;
-  color: var(--titleColor);
+  color: ${p => p.theme.colors.titleColor};
 `;

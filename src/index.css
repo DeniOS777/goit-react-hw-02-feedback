@@ -1,6 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
-
-:root {
+/* :root {
   --whiteColor: #ffffff;
   --greenColor: #089408;
   --greenColorHover: #078207;
@@ -9,29 +7,4 @@
   --redColor: #d42e2e;
   --redColorHover: #c12a2a;
   --titleColor: #009700;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+} */

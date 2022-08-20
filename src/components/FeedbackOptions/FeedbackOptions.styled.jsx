@@ -10,18 +10,18 @@ export const Button = styled.button`
   justify-content: center;
   padding: 7px;
   min-width: 80px;
-  color: var(--whiteColor);
+  color: ${p => p.theme.colors.whiteColor};
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  background-color: var(--neutralColor);
+  background-color: ${p => p.theme.colors.neutralColor};
   border-style: none;
   border-radius: 5px;
   transition: background-color 0.3s linear, transform 0.1s linear;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--neutralColorHover);
+    background-color: ${p => p.theme.colors.neutralColorHover};
   }
 
   &:active {
@@ -29,16 +29,16 @@ export const Button = styled.button`
   }
 
   &:first-child {
-    background-color: var(--greenColor);
+    background-color: ${p => p.theme.colors.greenColor};
     &:hover {
-      background-color: var(--greenColorHover);
+      background-color: ${p => p.theme.colors.greenColorHover};
     }
   }
 
   &:last-child {
-    background-color: var(--redColor);
+    background-color: ${p => p.theme.colors.redColor};
     &:hover {
-      background-color: var(--redColorHover);
+      background-color: ${p => p.theme.colors.redColorHover};
     }
   }
 
